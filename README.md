@@ -1,6 +1,4 @@
 #BC Modular
-==========
-
 ##Overview
 BC Modular is a collection of over 400 modules for the Creamware/SonicCore Modular II, III & IV devices. Envelopes, Filters, Oscillators, Switches, Mixers etc. provide all the basic building blocks you need for the most complex of modular patches while compatibility with existing modular modules means that BC Modular can be easily integrated into your patches.
 
