@@ -1,0 +1,6 @@
+ (C) Copyright 2014 bcmodular (http://www.bcmodular.co.uk/)
+
+You are installing BC Modular.
+
+The BC Modular is released under Creative Commons 4.0
+<http://creativecommons.org/licenses/by-sa/4.0/>
