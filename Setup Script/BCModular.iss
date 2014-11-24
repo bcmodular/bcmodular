@@ -3,7 +3,7 @@
 ; architectures (x86 and x64) using a single installer.
 
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING .ISS SCRIPT FILES!
-#define AppName "BCModular"
+#define AppName "BC Modular"
 #define RegSubKey "Software\BCModular\BCModular"
 
 [Setup]
@@ -29,6 +29,9 @@ ArchitecturesInstallIn64BitMode=x64
 ; Note: We don't set ProcessorsAllowed because we want this
 ; installation to run on all architectures (including Itanium,
 ; since it's capable of running 32-bit code too).
+WizardImageFile=C:\development\github\bcmodular\Setup Script\Images\BCWizImage.bmp
+WizardSmallImageFile=C:\development\github\bcmodular\Setup Script\Images\BCWizSmallImage.bmp
+VersionInfoVersion=0.9.8
 
 [Types]
 Name: "full"; Description: "Full installation"
@@ -43,6 +46,7 @@ Source: "..\Dll\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreversion 
 Source: "..\MMdsp\*"; DestDir: "{code:GetScopeDir}\App\Dsp"; Flags: ignoreversion uninsneveruninstall;
 Source: "..\BC Modules\*"; DestDir: "{code:GetModularDir}"; Flags: ignoreversion recursesubdirs;
 Source: "..\Presets\*"; DestDir: "{code:GetScopeDir}\Presets"; Flags: ignoreversion;
+Source: "..\BCFX\*"; DestDir: "{code:GetScopeDir}\Devices\Effects\Stereo"; Flags: ignoreversion;
 Source: "..\BC Shells\*"; DestDir: "{code:GetShellDir}"; Flags: ignoreversion;
 
 [Icons]
