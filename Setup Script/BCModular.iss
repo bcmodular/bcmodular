@@ -44,7 +44,7 @@ Name: "full"; Description: "Full installation"
 ; Place all common files here, first one should be marked 'solidbreak'
 Source: "..\Dll\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreversion solidbreak;
 Source: "..\MMdsp\*"; DestDir: "{code:GetScopeDir}\App\Dsp"; Flags: ignoreversion uninsneveruninstall;
-Source: "..\BC Modules\*"; DestDir: "{code:GetModularDir}"; Flags: ignoreversion recursesubdirs;
+Source: "..\BC Modules\*"; DestDir: "{code:GetModularDir}\BC"; Flags: ignoreversion recursesubdirs;
 Source: "..\Presets\*"; DestDir: "{code:GetScopeDir}\Presets"; Flags: ignoreversion;
 Source: "..\BCFX\*"; DestDir: "{code:GetScopeDir}\Devices\Effects\Stereo"; Flags: ignoreversion;
 Source: "..\BC Shells\*"; DestDir: "{code:GetShellDir}"; Flags: ignoreversion;
