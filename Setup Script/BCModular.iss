@@ -101,7 +101,7 @@ begin
 
   if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'ModularDir', ModularDir)) then
   begin
-    ModularDir := ExpandConstant('{pf}\Scope PCI\Modular Modules\BC Modules');
+    ModularDir := ExpandConstant('{pf}\Scope PCI\Modular Modules');
   end; 
 
   if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'ShellDir', ShellDir)) then
